@@ -17,6 +17,7 @@ public class GreetingController {
     public Greeting Greetings(@RequestParam(value="name") String name){
         greeting.setId(auto.incrementAndGet());
         greeting.setContent("Hii i am going to be succesfull,love yourself "+name);
+
         return greeting;
     }
 }
